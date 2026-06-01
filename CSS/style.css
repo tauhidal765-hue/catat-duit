@@ -250,3 +250,9 @@ hr {
   border-radius: 8px;
   font-style: italic;
 }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
