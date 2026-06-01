@@ -1,0 +1,17 @@
+{
+  "short_name": "CatatDuit",
+  "name": "Pencatatan Keuangan Duit",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2953/2953363.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#2b3543",
+  "theme_color": "#2b3543",
+  "display": "standalone",
+  "orientation": "portrait"
+}

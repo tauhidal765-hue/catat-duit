@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  padding-bottom: 20px;
+  margin-left: 200px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #2b3543;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+nav a {
+  text-decoration: none;
+  color: #888888;
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+nav a i {
+  font-size: 16px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #2ecc71;
+  background-color: #e8f8f0;
+}
+
+.judul {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  margin: 0 0 30px 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.judul h1 {
+  font-size: 22px;
+  color: #2b3543;
+}
+
+.wadah-aplikasi {
+  padding: 0 30px;
+  max-width: 1100px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px;
+}
+
+section h2,
+section h3 {
+  color: #2b3543;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+hr {
+  display: none;
+}
+
+.kartu-saldo {
+  background: radial-gradient(circle at top left, #34d399, #065f46);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.kartu-saldo h3 {
+  color: #e2e8f0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nominal-saldo {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.grup-kartu-ringkasan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.kartu {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border-left: 5px solid;
+}
+
+.kartu.pemasukan {
+  border-left-color: #10b981;
+}
+.kartu.pemasukan h4 {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+.kartu.pemasukan p {
+  color: #10b981;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.kartu.pengeluaran {
+  border-left-color: #ef4444;
+}
+.kartu.pengeluaran h4 {
+  color: #64748b;
+  margin-bottom: 8px;
+}
+.kartu.pengeluaran p {
+  color: #ef4444;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.grup-input {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grup-input label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.grup-input input,
+.grup-input select {
+  padding: 12px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.grup-input input:focus,
+.grup-input select:focus {
+  border-color: #3b82f6; /* Warna biru saat input diklik */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.tombol-simpan {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.tombol-simpan:hover {
+  background-color: #2563eb;
+}
+
+/* =========================================
+   GAYA UNTUK FITUR SCAN STRUK
+   ========================================= */
+.area-scan {
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px dashed #cbd5e1; /* Garis putus-putus estetik */
+}
+
+.tombol-scan {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #8b5cf6; /* Warna ungu modern */
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tombol-scan:hover {
+  background-color: #7c3aed;
+}
+
+.status-scan {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* =========================================
+   RIWAYAT TRANSAKSI
+   ========================================= */
+
+.list-transaksi {
+  list-style: none;
+}
+
+.data-kosong {
+  text-align: center;
+  color: #94a3b8;
+  padding: 30px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  font-style: italic;
+}
